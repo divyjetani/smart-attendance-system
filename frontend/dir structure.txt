@@ -1,0 +1,81 @@
+lib/
+├── main.dart
+├── app.dart
+├── config/
+│   └── router.dart
+├── core/
+│   ├── constants/
+│   │   └── app_constants.dart
+│   ├── theme/
+│   │   └── app_theme.dart
+│   ├── utils/
+│   │   ├── logger.dart
+│   │   ├── geolocation_helper.dart
+│   │   └── wifi_helper.dart
+│   ├── services/
+│   │   ├── api_service.dart
+│   │   └── storage_service.dart
+│   └── widgets/
+│       ├── snackbar.dart
+│       └── loading_overlay.dart
+├── data/
+│   ├── models/
+│   │   ├── attendance_model.dart
+│   │   ├── subject_model.dart
+│   │   ├── student_model.dart
+│   │   └── user_model.dart
+│   ├── repositories/
+│   │   ├── auth_repository_impl.dart
+│   │   ├── attendance_repository_impl.dart
+│   │   ├── subject_repository_impl.dart
+│   │   └── student_repository_impl.dart
+│   └── datasources/
+│       └── remote/
+│           └── api_service_impl.dart
+├── domain/
+│   ├── entities/
+│   │   ├── user.dart
+│   │   ├── subject.dart
+│   │   ├── attendance.dart
+│   │   └── student.dart
+│   ├── repositories/
+│   │   ├── auth_repository.dart
+│   │   ├── attendance_repository.dart
+│   │   ├── subject_repository.dart
+│   │   └── student_repository.dart
+│   └── usecases/
+│       ├── login_usecase.dart
+│       ├── fetch_attendance_usecase.dart
+│       ├── mark_attendance_usecase.dart
+│       ├── fetch_subjects_usecase.dart
+│       ├── fetch_students_usecase.dart
+│       ├── generate_qr_usecase.dart
+│       ├── upload_attendance_usecase.dart
+│       └── change_device_usecase.dart
+└── presentation/
+    ├── providers/
+    │   ├── auth_provider.dart
+    │   ├── attendance_provider.dart
+    │   ├── subject_provider.dart
+    │   └── student_provider.dart
+    ├── screens/
+    │   ├── splash_screen.dart
+    │   ├── login_screen.dart
+    │   ├── home_screen.dart
+    │   ├── profile_screen.dart
+    │   ├── attendance_screen.dart
+    │   ├── student_subjects_screen.dart
+    │   ├── subject_detail_screen.dart
+    │   ├── mark_attendance_screen.dart
+    │   ├── professor_subjects_screen.dart
+    │   ├── professor_students_screen.dart
+    │   ├── student_attendance_detail_screen.dart
+    │   ├── qr_generator_screen.dart
+    │   ├── upload_attendance_screen.dart
+    │   └── change_device_screen.dart
+    └── widgets/
+        ├── bottom_nav_bar.dart
+        ├── custom_drawer.dart
+        ├── semester_tile.dart
+        ├── subject_card.dart
+        └── attendance_calendar.dart
