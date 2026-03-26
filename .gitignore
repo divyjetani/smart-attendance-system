@@ -48,10 +48,23 @@ frontend/.metadata
 
 # Flutter build outputs
 frontend/build/
+frontend/**/build/
 frontend/**/Generated.xcconfig
 frontend/**/Flutter/ephemeral/
 frontend/**/Pods/
 frontend/**/.symlinks/
+frontend/**/flutter_export_environment.sh
+frontend/**/GeneratedPluginRegistrant.*
+frontend/**/App.framework
+frontend/**/Flutter.framework
+frontend/**/Flutter.podspec
+frontend/**/app.flx
+frontend/**/app.zip
+frontend/**/flutter_assets/
+
+# Flutter local tool caches
+frontend/.fvm/
+frontend/.pub/
 
 # Android generated/build files
 frontend/android/.gradle/
