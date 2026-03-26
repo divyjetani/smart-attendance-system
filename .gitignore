@@ -1,0 +1,90 @@
+# ------------------------------
+# OS / Editor
+# ------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+*.iml
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+
+# ------------------------------
+# Python backend
+# ------------------------------
+backend/.venv/
+backend/venv/
+backend/env/
+backend/__pycache__/
+backend/**/*.py[cod]
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.coverage
+backend/htmlcov/
+
+# Secrets / local env files
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# ------------------------------
+# Flutter / Dart frontend
+# ------------------------------
+frontend/.dart_tool/
+frontend/.packages
+frontend/.pub-cache/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.metadata
+
+# Flutter build outputs
+frontend/build/
+frontend/**/Generated.xcconfig
+frontend/**/Flutter/ephemeral/
+frontend/**/Pods/
+frontend/**/.symlinks/
+
+# Android generated/build files
+frontend/android/.gradle/
+frontend/android/build/
+frontend/android/local.properties
+frontend/android/captures/
+frontend/android/.externalNativeBuild/
+frontend/android/.cxx/
+frontend/android/**/output-metadata.json
+frontend/android/**/*.apk
+frontend/android/**/*.aab
+
+# iOS/macOS generated/build files
+frontend/ios/Pods/
+frontend/ios/.symlinks/
+frontend/ios/Flutter/ephemeral/
+frontend/macos/Pods/
+frontend/macos/.symlinks/
+frontend/macos/Flutter/ephemeral/
+
+# Windows/Linux generated build files
+frontend/windows/flutter/ephemeral/
+frontend/linux/flutter/ephemeral/
+
+# ------------------------------
+# Security sensitive files
+# ------------------------------
+*.jks
+*.keystore
+google-services.json
+
+# ------------------------------
+# Keep important source tracked
+# (Do not ignore frontend/ios or frontend/android source trees)
+# ------------------------------
+frontend/build/
